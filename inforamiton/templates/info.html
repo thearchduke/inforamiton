@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+<title>inforamiton</title>
+</head>
+<body style="background-color: #000;">
+<span style="font-family: courier; color: #0f0; font-size: 20px;">
+Welcome to the I.N.F.O.R.A.M.I.T.O.N. sandbox<br />
+Your location is {{ lat }} latitude, {{ lon }} longitude<br />
+$<span id="blinktag">▮</span>
+  <script>
+  var el = document.getElementById('blinktag');
+  setInterval(function(){
+    if ( el.style.display != 'none' ) {
+      el.style.display = 'none';
+    }
+    else {
+      el.style.display = '';
+    }
+  }, 500);
+  </script>
+
+
+</span>
+</body>

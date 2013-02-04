@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body onload="getLocation()">
+<script>
+var x=document.getElementById("demo");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(show_map);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+</script>
+<script type="text/javascript">
+function show_map(position)
+{
+  window.top.location.replace("/i/" + position.coords.latitude + "&" + position.coords.longitude);
+}
+</script>
+</body>
+</html>
+
