@@ -1,1 +1,1 @@
-Flask skeleton for INFORAMITON
+Flask skeleton for INFORAMITON plus GPS capabilities.
