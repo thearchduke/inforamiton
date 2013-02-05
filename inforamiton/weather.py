@@ -39,21 +39,21 @@ def adjectives(temp):
 	if temp <=32:
 		out = words['freezing']
 	if temp >100:
-		out = ['holy crap that is hot']
+		out = ['holy crap that is hot', 'lock your daughters down (because the temperature is so hot)']
 	return random.choice(out)
 
 if __name__ == '__main__':
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
-	test = random.randint(0,100)
+	test = random.randint(0,110)
 	print adjectives(words, test)
