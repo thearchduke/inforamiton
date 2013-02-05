@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>JS text-click POC</title>
+<style>
+a {color: #0f0; font-size: 20px; font-family: courier; text-decoration: none; font-weight: bold;}
+</style>
+<script type="text/javascript">
+function showdiv(id){
+document.getElementById(id).style.display = "block";
+}
+</script>
+</head>
+<body style="background-color: #000;">
+<span style="font-family: courier; color: #0f0; font-size: 20px;">
+Welcome to the I.N.F.O.R.A.M.I.T.O.N. sandbox.<br />
+$<a class="hide" onclick="showdiv('1bad'); " href="#">Bad</a><br />
+$<a class="hide" onclick="showdiv('1good'); " href="#">Good</a>
+<div id="1bad" style="display:none;">Why do you think that is?</div>
+<div id="1good" style="display:none;">Tell me more.</div>
+</span>
+</body>
+</html>
