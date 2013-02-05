@@ -8,4 +8,5 @@ def home():
 @app.route('/i/<lat>&<lon>', methods=['GET'])
 def info(lat,lon):
 	temp, place = weather.weather_from_gps(lat, lon)
-	return render_template('info.html', lat=lat, lon=lon, temp=temp, place=place)
+	tempDescrip = weather.adjectives(temp)
+	return render_template('info.html', lat=lat, lon=lon, temp=temp, place=place, adj=tempDescrip)
